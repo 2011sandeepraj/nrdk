@@ -24,7 +24,7 @@ $ npm install -g @bcgov/nrdk
 $ nrdk COMMAND
 running command...
 $ nrdk (-v|--version|version)
-@bcgov/nrdk/0.1.0-rc.28 darwin-x64 node-v12.14.1
+@bcgov/nrdk/0.1.0-rc.41 darwin-x64 node-v12.14.1
 $ nrdk --help [COMMAND]
 USAGE
   $ nrdk COMMAND
@@ -59,7 +59,8 @@ USAGE
 
 OPTIONS
   -b, --git.branch.name=git.branch.name  GIT local branch name
-  --dev-mode                             Developer Mode (local)
+  --archetype=java-web-app               Application Archetype/Pattern
+  --dev-mode=true|false                  [default: false] Developer Mode (local)
   --env=env                              Environment
   --git.branch.merge=git.branch.merge    GIT remote branch name
   --git.change.target=git.change.target  Target branch of the pull request (env:CHANGE_TARGET)
@@ -99,6 +100,7 @@ USAGE
 
 OPTIONS
   -b, --git.branch.name=git.branch.name  GIT local branch name
+  --archetype=java-web-app               Application Archetype/Pattern
   --env=env                              Environment
   --git.branch.merge=git.branch.merge    GIT remote branch name
   --git.remote.name=git.remote.name      [default: origin] GIT remote name
